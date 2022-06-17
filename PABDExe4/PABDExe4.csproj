@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FB45E654-EDA7-41CD-B2AC-F2D3A754CFDF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PABDExe4</RootNamespace>
+    <AssemblyName>PABDExe4</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GridMem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridMem.Designer.cs">
+      <DependentUpon>GridMem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridPeg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridPeg.Designer.cs">
+      <DependentUpon>GridPeg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridBuku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridBuku.Designer.cs">
+      <DependentUpon>GridBuku.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenUt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenUt.Designer.cs">
+      <DependentUpon>MenUt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BinPeg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BinPeg.Designer.cs">
+      <DependentUpon>BinPeg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BinBuk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BinBuk.Designer.cs">
+      <DependentUpon>BinBuk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BinMem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BinMem.Designer.cs">
+      <DependentUpon>BinMem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenPeg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenPeg.Designer.cs">
+      <DependentUpon>MenPeg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenBuk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenBuk.Designer.cs">
+      <DependentUpon>MenBuk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenMem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenMem.Designer.cs">
+      <DependentUpon>MenMem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PABDExe2_PERPUSDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PABDExe2_PERPUSDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PABDExe2_PERPUSDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PABDExe2_PERPUSDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PABDExe2_PERPUSDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PABDExe2_PERPUSDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PABDExe2_PERPUSDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PABDExe2_PERPUSDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PABDExe2_PERPUSDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PABDExe2_PERPUSDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PABDExe2_PERPUSDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PABDExe2_PERPUSDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PABDExe2_PERPUSDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PABDExe2_PERPUSDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PABDExe2_PERPUSDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PABDExe2_PERPUSDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GridMem.resx">
+      <DependentUpon>GridMem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridPeg.resx">
+      <DependentUpon>GridPeg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridBuku.resx">
+      <DependentUpon>GridBuku.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenUt.resx">
+      <DependentUpon>MenUt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BinPeg.resx">
+      <DependentUpon>BinPeg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BinBuk.resx">
+      <DependentUpon>BinBuk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BinMem.resx">
+      <DependentUpon>BinMem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenPeg.resx">
+      <DependentUpon>MenPeg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenBuk.resx">
+      <DependentUpon>MenBuk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenMem.resx">
+      <DependentUpon>MenMem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="PABDExe2_PERPUSDataSet.xsc">
+      <DependentUpon>PABDExe2_PERPUSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PABDExe2_PERPUSDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PABDExe2_PERPUSDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PABDExe2_PERPUSDataSet.xss">
+      <DependentUpon>PABDExe2_PERPUSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PABDExe2_PERPUSDataSet1.xsc">
+      <DependentUpon>PABDExe2_PERPUSDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PABDExe2_PERPUSDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PABDExe2_PERPUSDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PABDExe2_PERPUSDataSet1.xss">
+      <DependentUpon>PABDExe2_PERPUSDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PABDExe2_PERPUSDataSet2.xsc">
+      <DependentUpon>PABDExe2_PERPUSDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="PABDExe2_PERPUSDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PABDExe2_PERPUSDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PABDExe2_PERPUSDataSet2.xss">
+      <DependentUpon>PABDExe2_PERPUSDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="PABDExe2_PERPUSDataSet3.xsc">
+      <DependentUpon>PABDExe2_PERPUSDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="PABDExe2_PERPUSDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PABDExe2_PERPUSDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PABDExe2_PERPUSDataSet3.xss">
+      <DependentUpon>PABDExe2_PERPUSDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="PABDExe2_PERPUSDataSet4.xsc">
+      <DependentUpon>PABDExe2_PERPUSDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="PABDExe2_PERPUSDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PABDExe2_PERPUSDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PABDExe2_PERPUSDataSet4.xss">
+      <DependentUpon>PABDExe2_PERPUSDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="PABDExe2_PERPUSDataSet5.xsc">
+      <DependentUpon>PABDExe2_PERPUSDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="PABDExe2_PERPUSDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PABDExe2_PERPUSDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PABDExe2_PERPUSDataSet5.xss">
+      <DependentUpon>PABDExe2_PERPUSDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="PABDExe2_PERPUSDataSet6.xsc">
+      <DependentUpon>PABDExe2_PERPUSDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="PABDExe2_PERPUSDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PABDExe2_PERPUSDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PABDExe2_PERPUSDataSet6.xss">
+      <DependentUpon>PABDExe2_PERPUSDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="PABDExe2_PERPUSDataSet7.xsc">
+      <DependentUpon>PABDExe2_PERPUSDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="PABDExe2_PERPUSDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PABDExe2_PERPUSDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PABDExe2_PERPUSDataSet7.xss">
+      <DependentUpon>PABDExe2_PERPUSDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
